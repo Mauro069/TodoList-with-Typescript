@@ -1,0 +1,195 @@
+@import "../../styles/variables.scss";
+
+@media (max-width: $breakpoint - 1) {
+  .formContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form {
+      background-color: $violeta_claro;
+      width: 70vw;
+      max-width: 450px;
+      height: 330px;
+      margin-top: 15px;
+
+      h3 {
+        padding-top: 20px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .inputsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+
+        .tituloInput {
+          background-color: $amarillo;
+          border: none;
+          border-radius: 5px;
+          width: 80%;
+          max-width: 275px;
+          height: 35px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          &::placeholder {
+            font-size: 16px;
+            color: $marron;
+            font-weight: 600;
+            opacity: 0.6;
+            margin-top: 10px;
+          }
+        }
+
+        .descripcionInput {
+          background-color: $amarillo;
+          border: none;
+          border-radius: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          resize: none;
+          width: 80%;
+          max-width: 325px;
+          height: 140px;
+          padding-top: 3px;
+
+          &::placeholder {
+            font-size: 16px;
+            color: $marron;
+            font-weight: 600;
+            opacity: 0.6;
+            margin-top: 10px;
+          }
+        }
+
+        .agregar {
+          border: none;
+          border-radius: 5px;
+          width: 80%;
+          max-width: 325px;
+          height: 30px;
+          background-color: white;
+          color: $violeta_oscuro;
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $violeta_oscuro;
+            color: white;
+            transition-duration: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint) {
+  .formContainer {
+    margin-left: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    .form {
+      background-color: $violeta_claro;
+      width: 450px;
+      height: 330px;
+      padding-left: 25px;
+      margin-top: 25px;
+
+      h3 {
+        padding-top: 20px;
+        color: white;
+        font-size: 25px;
+      }
+
+      .inputsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+
+        .tituloInput {
+          background-color: $amarillo;
+          border: none;
+          border-radius: 5px;
+          width: 275px;
+          height: 35px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          &::placeholder {
+            font-size: 16px;
+            color: $marron;
+            font-weight: 600;
+            opacity: 0.6;
+            margin-top: 10px;
+          }
+        }
+
+        .descripcionInput {
+          background-color: $amarillo;
+          border: none;
+          border-radius: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          resize: none;
+          width: 375px;
+          height: 140px;
+          padding-top: 3px;
+
+          &::placeholder {
+            font-size: 16px;
+            color: $marron;
+            font-weight: 600;
+            opacity: 0.6;
+            margin-top: 10px;
+          }
+        }
+
+        .agregar {
+          border: none;
+          border-radius: 5px;
+          width: 375px;
+          height: 30px;
+          background-color: white;
+          color: $violeta_oscuro;
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $violeta_oscuro;
+            color: white;
+            transition-duration: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}

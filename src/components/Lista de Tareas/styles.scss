@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+@media (max-width: $breakpoint - 1) {
+  .tareasContainer {
+    overflow-y: scroll;
+    background-color: $violeta_claro;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (min-width: $breakpoint) {
+  .tareasContainer {
+    overflow-y: scroll;
+    background-color: $violeta_claro;
+    width: 550px;
+    height: 100vh;
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
